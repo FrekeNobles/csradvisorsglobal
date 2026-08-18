@@ -9,7 +9,13 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_.8fr_.8fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-white text-sm font-extrabold text-ink">C</span>
+              <div className="grid h-9 w-9 place-items-center">
+                <img
+                  src="/images/logo.png"
+                  alt="CSR Global"
+                  className="h-10 w-10 object-contain"
+                />
+              </div>
               <div>
                 <div className="font-extrabold">CSR Global</div>
                 <div className="text-xs text-white/50">Specialist advisory group</div>
