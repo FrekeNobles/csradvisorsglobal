@@ -49,7 +49,7 @@ export function GroupHome() {
                       <Link href="/africa" className="rounded-2xl bg-white/[.07] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
                         <div className="text-xs font-bold uppercase tracking-[.12em] text-cyan">CSR Advisors Ltd</div>
                         <div className="mt-2 text-xl font-bold">Social Performance & Development</div>
-                        <div className="mt-2 text-sm leading-6 text-white/55">CSR, Sust, RAP, research and impact expertise.</div>
+                        <div className="mt-2 text-sm leading-6 text-white/55">CSR, Sustainability, RAP, research and impact expertise.</div>
                       </Link>
                       <Link href="/usa" className="ml-8 rounded-2xl bg-white/[.07] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
                         <div className="text-xs font-bold uppercase tracking-[.12em] text-blue-300">CSR Advisors LLC</div>
@@ -89,27 +89,100 @@ export function GroupHome() {
         </section>
 
         <section id="about" className="scroll-mt-28 border-y border-line bg-white">
-          <div className="container-shell grid gap-12 py-20 sm:py-28 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
-            <div>
-              <div className="section-kicker">About the group</div>
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">One group structure without forcing two industries into one message.</h2>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                [Layers3, "Distinct positioning", "Each subsidiary can lead with the problems its own clients are actually trying to solve."],
-                [ShieldCheck, "Professional consistency", "Shared standards across the group while keeping each practice's expertise clear."],
-                [Sparkles, "Better discovery", "Visitors can self-select into the right practice within seconds."],
-                [CheckCircle2, "Room to grow", "New services, insights and industries can be added without rebuilding the information architecture."],
-              ].map(([Icon, title, text]) => (
-                <div key={String(title)} className="rounded-3xl border border-line bg-mist/60 p-6">
-                  <Icon size={22} className="text-teal" />
-                  <h3 className="mt-5 font-bold text-ink">{String(title)}</h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-500">{String(text)}</p>
-                </div>
-              ))}
-            </div>
+  <div className="container-shell py-20 sm:py-28">
+    {/* About the group */}
+    <div className="grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
+      <div>
+        <div className="section-kicker">About the group</div>
+        <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+          One group structure without forcing two industries into one message.
+        </h2>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+        {[
+          [
+            Layers3,
+            "Distinct positioning",
+            "Each subsidiary can lead with the problems its own clients are actually trying to solve.",
+          ],
+          [
+            ShieldCheck,
+            "Professional consistency",
+            "Shared standards across the group while keeping each practice's expertise clear.",
+          ],
+          [
+            Sparkles,
+            "Better discovery",
+            "Visitors can self-select into the right practice within seconds.",
+          ],
+          [
+            CheckCircle2,
+            "Room to grow",
+            "New services, insights and industries can be added without rebuilding the information architecture.",
+          ],
+        ].map(([Icon, title, text]) => (
+          <div
+            key={String(title)}
+            className="rounded-3xl border border-line bg-mist/60 p-6"
+          >
+            <Icon size={22} className="text-teal" />
+            <h3 className="mt-5 font-bold text-ink">{String(title)}</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-500">
+              {String(text)}
+            </p>
           </div>
-        </section>
+        ))}
+      </div>
+    </div>
+
+    {/* About the founder */}
+    <div className="mt-24 border-t border-line pt-20 sm:mt-28 sm:pt-28">
+      <div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center lg:gap-16">
+        
+        {/* Founder image */}
+        <div className="overflow-hidden rounded-3xl border border-line bg-mist">
+          <div className="aspect-[4/5] w-full">
+            <img
+              src="/images/founder-placeholder.jpg"
+              alt="Founder of CSR Global"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Founder content */}
+        <div>
+          <div className="section-kicker">About the founder</div>
+
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+            Leadership built around experience, purpose and impact.
+          </h2>
+
+          <p className="mt-6 text-base leading-8 text-slate-600">
+            CSR Global was founded with a commitment to helping organisations
+            create meaningful, sustainable and measurable impact across the
+            communities and industries they serve.
+          </p>
+
+          <p className="mt-4 text-base leading-8 text-slate-600">
+            Through years of experience working across consulting, community
+            development and corporate responsibility, our founder has shaped
+            CSR Global into a group that brings together specialised expertise
+            while maintaining a shared commitment to excellence.
+          </p>
+
+          <div className="mt-8">
+            <p className="font-bold text-ink">Dr. Ike Onwaduegbu</p>
+            <p className="mt-1 text-sm text-slate-500">
+              Founder & Chairman, CSR Global
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section id="process" className="scroll-mt-28 bg-mist py-20 sm:py-28">
           <div className="container-shell">

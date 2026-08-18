@@ -18,7 +18,7 @@ export function Header() {
               <span className="grid h-9 w-9 place-items-center rounded-xl bg-ink text-sm font-bold text-white">C</span>
               <span>
                 <span className="block text-sm font-extrabold tracking-tight text-ink">CSR Advisors</span>
-                <span className="hidden text-[10px] font-semibold uppercase tracking-[.14em] text-slate-500 sm:block">Specialist advisory group</span>
+                <span className="hidden text-[10px] font-semibold uppercase tracking-[.14em] text-slate-500 sm:block">Specialist Advisory Group</span>
               </span>
             </Link>
 
