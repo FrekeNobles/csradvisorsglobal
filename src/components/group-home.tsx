@@ -142,11 +142,11 @@ export function GroupHome() {
         
         {/* Founder image */}
         <div className="overflow-hidden rounded-3xl border border-line bg-mist">
-          <div className="aspect-[4/5] w-full">
+          <div className=" relative  aspect-[4/5] w-full">
             <img
-              src="/images/founder-placeholder.jpg"
+              src="/images/founder-image.jpg"
               alt="Founder of CSR Global"
-              className="h-full w-full object-cover"
+              className="absolute top-0 left-0 h-auto w-full object-cover"
             />
           </div>
         </div>

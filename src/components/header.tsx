@@ -15,7 +15,13 @@ export function Header() {
         <div className="glass rounded-2xl px-4 py-3 sm:px-5">
           <div className="flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-ink text-sm font-bold text-white">C</span>
+              <div className="grid h-9 w-9 place-items-center">
+                <img
+                  src="/images/logo.png"
+                  alt="CSR Global"
+                  className="h-9 w-9 object-contain"
+                />
+              </div>
               <span>
                 <span className="block text-sm font-extrabold tracking-tight text-ink">CSR Advisors</span>
                 <span className="hidden text-[10px] font-semibold uppercase tracking-[.14em] text-slate-500 sm:block">Specialist Advisory Group</span>
