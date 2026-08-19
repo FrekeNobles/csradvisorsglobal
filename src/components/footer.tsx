@@ -9,23 +9,25 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_.8fr_.8fr]">
           <div>
             <div className="flex items-center gap-3">
-              <div className="grid h-9 w-9 place-items-center">
-                <img
-                  src="/images/logo.png"
-                  alt="CSR Global"
-                  className="h-10 w-10 object-contain"
-                />
-              </div>
-              <div>
-                <div className="font-extrabold">CSR Global</div>
-                <div className="text-xs text-white/50">Specialist advisory group</div>
-              </div>
+              <Link href="/" className="flex items-center gap-3" >
+                <div className="grid h-9 w-9 place-items-center">
+                  <img
+                    src="/images/logo.png"
+                    alt="CSR Global"
+                    className="h-10 w-10 object-contain"
+                  />
+                </div>
+                <div>
+                  <div className="font-extrabold">CSR Advisors</div>
+                  <div className="text-xs text-white/50">Specialist advisory group</div>
+                </div>
+              </Link>
             </div>
-            <p className="mt-5 max-w-md text-sm leading-7 text-white/60">
+            {/* <p className="mt-5 max-w-md text-sm leading-7 text-white/60">
               A group structure designed to make specialist expertise easier to find, understand and access across distinct markets and needs.
-            </p>
+            </p> */}
             <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/60">
-              <span className="inline-flex items-center gap-2"><Mail size={15} /> info@csrglobal.com</span>
+              <a href="mailto:info@csradvisorsglobal.com" className="inline-flex items-center gap-2"><Mail size={15} /> info@csradvisorsglobal.com</a>
               <span className="inline-flex items-center gap-2"><MapPin size={15} /> Africa & United States</span>
             </div>
           </div>

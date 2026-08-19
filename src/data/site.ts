@@ -6,7 +6,7 @@ export type Service = {
 };
 
 export type Practice = {
-  slug: "africa" | "usa";
+  slug: "ltd" | "llc";
   legalName: string;
   label: string;
   audience: string;
@@ -18,22 +18,22 @@ export type Practice = {
 };
 
 export const group = {
-  name: "CSR Global",
+  name: "CSR Advisors",
   legalDescriptor: "A specialist advisory group",
   headline: "Two specialist practices. One trusted group.",
   description:
-    "CSR Global brings together distinct professional practices so clients can work with the right team for the right challenge, without losing the strength of a shared group.",
+    "CSR Advisors brings together distinct professional practices so clients can work with the right team for the right challenge, without losing the strength of a shared group.",
 };
 
 export const practices: Practice[] = [
   {
-    slug: "africa",
+    slug: "ltd",
     legalName: "CSR Advisors Ltd",
     label: "Social Performance & Sustainability Advisory",
     audience: "For companies, public institutions, communities and development partners",
     description:
       "We help organizations understand people, engage communities, manage social performance and design development initiatives that create measurable, lasting value.",
-    href: "/africa",
+    href: "/ltd",
     accent: "teal",
     services: [
       {
@@ -89,13 +89,13 @@ export const practices: Practice[] = [
     ],
   },
   {
-    slug: "usa",
+    slug: "llc",
     legalName: "CSR Advisors LLC",
     label: "Business, Tax & Financial Advisory",
     audience: "For entrepreneurs, businesses, nonprofits and organizations operating in the United States",
     description:
       "We help clients establish, manage and strengthen their organizations through practical business, tax, accounting, funding and financial support.",
-    href: "/usa",
+    href: "/llc",
     accent: "blue",
     services: [
       {
