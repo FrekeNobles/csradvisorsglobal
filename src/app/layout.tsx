@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CSR Advisors Global | Specialist Advisory Firm.",
+  title: "CSR Advisors Global | Tax, Compliance and Sustainability Advisory Firm.",
   description:
     "CSR Advisors Global connects specialist advisory practices serving social performance, community development, corporate responsibility, accounting, business services and financial advisory needs.",
      icons: {
