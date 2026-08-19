@@ -5,8 +5,37 @@ import { Footer } from "./footer";
 import { ServiceCard } from "./service-card";
 import type { Practice } from "@/data/site";
 
+const practiceContent = {
+  ltd: {
+    whatWeDo: {
+      title: "Practical solutions for stronger communities and sustainable development.",
+      description:
+        "We help organizations understand community needs, engage stakeholders effectively, design CSR initiatives and deliver programmes that create measurable and lasting value.",
+    },
+    whoWeServe: {
+      title: "Working with organizations creating impact across communities.",
+      description:
+        "We support companies, institutions and development-focused organizations working across sectors where community relationships, social investment and sustainable development matter.",
+    },
+  },
+
+  llc: {
+    whatWeDo: {
+      title: "Financial and business solutions built around better decisions.",
+      description:
+        "We help businesses strengthen their financial position, improve decision-making, manage risk and build practical systems that support sustainable business growth.",
+    },
+    whoWeServe: {
+      title: "Supporting businesses that want greater clarity and stronger performance.",
+      description:
+        "We work with businesses, entrepreneurs and organizations that need practical financial, advisory and business support tailored to their goals and operating realities.",
+    },
+  },
+};
+
 export function PracticePage({ practice }: { practice: Practice }) {
-  const isAfrica = practice.slug === "africa";
+  const isAfrica = practice.slug === "ltd";
+  const content = practiceContent[practice.slug as keyof typeof practiceContent];
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-white">
@@ -40,8 +69,12 @@ export function PracticePage({ practice }: { practice: Practice }) {
         <section id="services" className="container-shell scroll-mt-28 py-20 sm:py-28">
           <div className="max-w-2xl">
             <div className="section-kicker">What we do</div>
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Specialist services, explained clearly.</h2>
-            <p className="mt-4 text-base leading-7 text-slate-500">Select “Read more” on any service to see what the engagement can cover.</p>
+              <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+                {content.whatWeDo.title}
+              </h2>
+              <p className="mt-4 text-base leading-7 text-slate-500">
+                {content.whatWeDo.description}
+              </p>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {practice.services.map((service) => <ServiceCard key={service.title} service={service} />)}
@@ -52,9 +85,13 @@ export function PracticePage({ practice }: { practice: Practice }) {
           <div className="container-shell grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
             <div>
               <div className="section-kicker">Who we serve</div>
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Built around the realities of your sector.</h2>
-              <p className="mt-4 text-base leading-7 text-slate-500">The practice keeps its own industry language so the right audience can immediately recognize where we fit.</p>
-            </div>
+                <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+                  {content.whoWeServe.title}
+                </h2>
+                <p className="mt-4 text-base leading-7 text-slate-500">
+                  {content.whoWeServe.description}
+                </p>
+              </div>
             <div className="grid gap-3 sm:grid-cols-2">
               {practice.industries.map((industry) => (
                 <div key={industry} className="flex items-center gap-3 rounded-2xl border border-line bg-white p-4 text-sm font-semibold text-ink">
@@ -74,7 +111,7 @@ export function PracticePage({ practice }: { practice: Practice }) {
                   <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink">Let&apos;s discuss what you need.</h2>
                   <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-500">Share your objectives, project context or business needs and we&apos;ll connect you with the appropriate specialist team.</p>
                 </div>
-                <a href="mailto:info@csrAdvisors.com" className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-white ${isAfrica ? "bg-teal" : "bg-blue-700"}`}>Start a conversation <ArrowRight size={17} /></a>
+                <a href="mailto:info@csradvisorsglobal.com" className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-white ${isAfrica ? "bg-teal" : "bg-blue-700"}`}>Start a conversation <ArrowRight size={17} /></a>
               </div>
             </div>
           </div>

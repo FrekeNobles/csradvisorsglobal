@@ -45,17 +45,20 @@ export function GroupHome() {
                       <span className="text-xs font-bold uppercase tracking-[.15em] text-white/45">CSR Advisors</span>
                       <span className="h-2.5 w-2.5 rounded-full bg-cyan" />
                     </div>
+                    
                     <div className="mt-12 grid gap-3">
-                      <Link href="/africa" className="rounded-2xl bg-white/[.07] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
+                      
+                      <Link href="/ltd" className="rounded-2xl bg-white/[.07] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
                         <div className="text-xs font-bold uppercase tracking-[.12em] text-cyan">CSR Advisors Ltd</div>
                         <div className="mt-2 text-xl font-bold">Social Performance & Development</div>
                         <div className="mt-2 text-sm leading-6 text-white/55">CSR, Sustainability, RAP, research and impact expertise.</div>
                       </Link>
-                      <Link href="/usa" className="ml-8 rounded-2xl bg-white/[.07] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
+                      <Link href="/llc" className="ml-8 rounded-2xl bg-white/[.07] p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
                         <div className="text-xs font-bold uppercase tracking-[.12em] text-blue-300">CSR Advisors LLC</div>
                         <div className="mt-2 text-xl font-bold">Business, Tax & Financial</div>
                         <div className="mt-2 text-sm leading-6 text-white/55">Business setup, tax, accounting, funding and financial support.</div>
                       </Link>
+                      
                     </div>
                   </div>
                 </div>
@@ -65,8 +68,8 @@ export function GroupHome() {
             <div className="mt-14 grid gap-3 sm:grid-cols-3">
               {[
                 ["Specialist expertise", "Each practice speaks directly to its own audience and industry needs."],
-                ["Clearer client journeys", "No more guessing which company or service is the right fit."],
-                ["Shared group strength", "Distinct teams, connected by a common standard of professionalism."],
+                ["Tailored solutions", "Focused services designed around the specific challenges, priorities and goals of each client."],
+                ["One trusted standard", "Distinct teams, united by a shared commitment to professionalism, integrity and quality."],
               ].map(([title, text]) => (
                 <div key={title} className="rounded-2xl border border-line bg-white/75 p-5 backdrop-blur">
                   <div className="flex items-center gap-2 text-sm font-bold text-ink"><CheckCircle2 size={17} className="text-teal" /> {title}</div>
@@ -80,9 +83,9 @@ export function GroupHome() {
         <section id="practices" className="container-shell scroll-mt-28 py-20 sm:py-28">
           <div className="max-w-2xl">
             <div className="section-kicker">Choose your practice</div>
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Two businesses. Two clear experiences.</h2>
+            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Specialized expertise. Meaningful impact..</h2>
             <p className="mt-4 text-base leading-7 text-slate-500">
-              The group homepage introduces the relationship. From here, each subsidiary gets its own language, services and calls to action so visitors immediately see what applies to them.
+              Discover our subsidiaries, each bringing dedicated expertise, services and solutions to address the unique needs of organizations, communities and stakeholders.
             </p>
           </div>
           <div className="mt-10"><PracticeSwitcher /></div>
@@ -95,7 +98,7 @@ export function GroupHome() {
       <div>
         <div className="section-kicker">About the group</div>
         <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-          One group structure without forcing two industries into one message.
+          Driving responsible business and sustainable development
         </h2>
       </div>
 
@@ -103,23 +106,23 @@ export function GroupHome() {
         {[
           [
             Layers3,
-            "Distinct positioning",
-            "Each subsidiary can lead with the problems its own clients are actually trying to solve.",
+            "Financial Planning",
+            "Get the financial insight and support you need to make better business decisions and plan with confidence.",
           ],
           [
             ShieldCheck,
-            "Professional consistency",
-            "Shared standards across the group while keeping each practice's expertise clear.",
+            "CSR & Sustainability",
+            "Develop responsible strategies that strengthen your organization\'s social and environmental impact",
           ],
           [
             Sparkles,
-            "Better discovery",
-            "Visitors can self-select into the right practice within seconds.",
+            "Business Growth",
+            "Access practical financial solutions that help you manage resources, improve performance and pursue new opportunities.",
           ],
           [
             CheckCircle2,
-            "Room to grow",
-            "New services, insights and industries can be added without rebuilding the information architecture.",
+            "Community Impact",
+            "Understand stakeholder needs, engage communities effectively and deliver initiatives that create lasting value.",
           ],
         ].map(([Icon, title, text]) => (
           <div
@@ -160,7 +163,7 @@ export function GroupHome() {
           </h2>
 
           <p className="mt-6 text-base leading-8 text-slate-600">
-            CSR Global was founded with a commitment to helping organisations
+            CSR Advisors was founded with a commitment to helping organisations
             create meaningful, sustainable and measurable impact across the
             communities and industries they serve.
           </p>
@@ -175,7 +178,7 @@ export function GroupHome() {
           <div className="mt-8">
             <p className="font-bold text-ink">Dr. Ike Onwaduegbu</p>
             <p className="mt-1 text-sm text-slate-500">
-              Founder & Chairman, CSR Global
+              Founder & Chairman, CSR Advisors
             </p>
           </div>
         </div>
@@ -214,7 +217,7 @@ export function GroupHome() {
                   <h2 className="mt-3 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl">Tell us what you are trying to solve.</h2>
                   <p className="mt-4 max-w-2xl text-sm leading-7 text-white/60">We can direct your enquiry to the specialist practice best positioned to help.</p>
                 </div>
-                <a href="mailto:info@csrAdvisors.com" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-ink transition hover:-translate-y-0.5">
+                <a href="mailto:info@csradvisorsglobal.com" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-ink transition hover:-translate-y-0.5">
                   Get in touch <ArrowRight size={17} />
                 </a>
               </div>
