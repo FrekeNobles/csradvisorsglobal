@@ -8,9 +8,9 @@ import type { Practice } from "@/data/site";
 const practiceContent = {
   ltd: {
     whatWeDo: {
-      title: "Practical solutions for stronger communities and sustainable development.",
+      title: "Sustainability solutions that create lasting impact.",
       description:
-        "We help organizations understand community needs, engage stakeholders effectively, design CSR initiatives and deliver programmes that create measurable and lasting value.",
+        "Explore our services to discover how we help organizations strengthen their CSR, engage stakeholders, support communities and deliver sustainable development initiatives.",
     },
     whoWeServe: {
       title: "Working with organizations creating impact across communities.",
